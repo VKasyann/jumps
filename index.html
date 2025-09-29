@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trampoline Trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Trampoline Trainer</h1>
+    <p>Generate a random sequence of trampoline elements to train!</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="row difficulty-row">
+        <label>Choose difficulty:</label>
+        <div class="difficulty-buttons">
+          <button type="button" class="difficulty-btn" data-value="0">0</button>
+          <button type="button" class="difficulty-btn" data-value="1">1</button>
+          <button type="button" class="difficulty-btn" data-value="2">2</button>
+          <button type="button" class="difficulty-btn" data-value="3">3</button>
+          <button type="button" class="difficulty-btn" data-value="4">4</button>
+          <button type="button" class="difficulty-btn" data-value="5">5</button>
+        </div>
+      </div>
+
+      <div class="row sequence-row">
+        <label for="sequenceLength">Number of elements:</label>
+        <input type="number" id="sequenceLength" min="1" max="10" value="5">
+        <button id="generateBtn">Generate Sequence</button>
+      </div>
+    </div>
+
+    <section id="sequenceContainer">
+      <h2>Your Training Sequence</h2>
+      <ul id="sequenceList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trampoline Trainer</p>
+  <p class="instagram-link">
+    <a href="https://instagram.com/air_runner" target="_blank" rel="noopener noreferrer">
+      <img 
+        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+        alt="Instagram logo" 
+        class="insta-logo">
+      @air_runner
+    </a>
+  </p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
