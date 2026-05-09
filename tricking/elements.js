@@ -5376,7 +5376,7 @@ const elements = [
     "tricker": "Full Shuriken Hyperhook",
     "start": "complete",
     "landing": "mega",
-    "video": "FullShurikenHyperhookFeilong.mp4",
+    "video": "https://loopkicks.s3-us-west-1.amazonaws.com/app/videos/tricktionary/individualTricks/categories/backward/full/fullShurikenHyperhookFeilong.mp4",
     "difficulty": 5
   },
   {
