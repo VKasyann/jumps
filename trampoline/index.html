@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trampoline Trainer</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="nav-header">
+    <a href="../index.html" style="color: white; text-decoration: none;">🏠 Home</a>
+  </nav>
+
+  <header>
+    <h1>Trampoline Jumps</h1>
+    <p>Generate a random sequence of trampoline elements to train!</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="row difficulty-row">
+        <label>Choose difficulty:</label>
+        <div class="difficulty-buttons">
+          <button type="button" class="difficulty-btn" data-value="0">0</button>
+          <button type="button" class="difficulty-btn" data-value="1">1</button>
+          <button type="button" class="difficulty-btn" data-value="2">2</button>
+          <button type="button" class="difficulty-btn" data-value="3">3</button>
+          <button type="button" class="difficulty-btn" data-value="4">4</button>
+          <button type="button" class="difficulty-btn" data-value="5">5</button>
+        </div>
+      </div>
+
+      <div class="row sequence-row">
+        <label for="sequenceLength">Number of elements:</label>
+        <input type="number" id="sequenceLength" min="1" max="10" value="5">
+        <button id="generateBtn">Generate Sequence</button>
+      </div>
+    </div>
+
+    <section id="sequenceContainer">
+      <h2>Your Training Sequence</h2>
+      <ul id="sequenceList"></ul>
+    </section>
+  </main>
+
+  <div class="help-container">
+    <button id="helpButton" class="btn-help">How to read moves? ℹ️</button>
+    <div id="helpContent" class="help-content hidden">
+      <h2>🤸 Understanding the Rotation</h2>
+      <h3>Quarters (1/4, 2/4, 3/4 ...)</h3>
+      <br>
+
+      <p>In trampolining, we measure flips in <strong>Quarters</strong>. Think of every flip as a circle divided into
+        four parts.</p>
+
+      <ul>
+        <li><strong>1/4 Turn:</strong> Quarter rotation (from legs landing on stomach/back).</li>
+        <li><strong>2/4 Turn:</strong> Half rotation</li>
+        <li><strong>3/4 Turn:</strong> Three-quarter rotation.</li>
+        <li><strong>4/4 Turn:</strong> Full rotation (back to starting position).</li>
+      </ul>
+      <br>
+
+      <p>As an example, Front 4/4 into legs - this is standard front flip.</p>
+
+      <div class="visual-guide">
+        <h4>Visual Rotation Guide:</h4>
+        <img src="/trampoline/files/info.png" alt="Trampoline Rotation Chart" class="help-image">
+        <p class="image-caption">Visualization of 1/4, 2/4, 3/4, and 4/4 rotation arcs.</p>
+      </div>
+
+      <br>
+      <h3>Understanding Twists (180, 360, 540)</h3>
+      <br>
+      <p>While flips go forward or backward, twists happen around your body "center pole" (vertical axis).</p>
+
+      <ul>
+        <li><strong>180(0.5):</strong> (Half Twist): You change direction. If you started facing the front of the trampoline, you end facing the back.</li>
+        <li><strong>360(1):</strong> (Full Twist): A complete spin. You end facing the same way you started.</li>
+        <li><strong>540(1.5):</strong> (One and a Half): A full spin plus another half-turn (facing the opposite way).</li>
+        <li><strong>720(2):</strong> (Double Twist): Two complete spins.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p class="instagram-link">
+      <a href="https://instagram.com/air_runner" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram logo" class="insta-logo">
+        @air_runner
+      </a>
+    </p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+/* General reset */
+.controls {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#sequenceContainer {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+#sequenceList {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#sequenceList li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.sequence-row label,
+.sequence-row input,
+.sequence-row button {
+  display: inline-block;
+  /* ensures they stay on same line */
+  vertical-align: middle;
+}
+
+.difficulty-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.difficulty-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #740040;
+  border-radius: 20px;
+  background: #740040;
+  color: #aaa;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.difficulty-btn:hover {
+  background: #88b901;
+}
+
+.difficulty-btn.active {
+  background: #007736;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.controls input,
+.controls button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.controls button {
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #b9b601;
+}
+
+.help-container {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.btn-help {
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-help:hover {
+    background-color: #b9b601;
+}
+
+.help-content {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.visual-guide {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.help-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+}

@@ -7,6 +7,17 @@ buttons.forEach(btn => {
   });
 });
 
+document.getElementById('helpButton').addEventListener('click', function() {
+    const content = document.getElementById('helpContent');
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        this.textContent = "Hide Description ✖️";
+    } else {
+        content.classList.add('hidden');
+        this.textContent = "How to read moves? ℹ️";
+    }
+});
+
 function getAllElements() {
   return Object.values(elements).flat();
 }
@@ -82,14 +93,4 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     `;
     sequenceList.appendChild(li);
   }
-
-  // render
-  // elements.legs.forEach((el, idx) => {
-  //   const li = document.createElement("li");
-  //   li.innerHTML = `
-  //     <strong>${el.description}</strong><br>
-  //     Start: ${el.description.split(' ')[1]} → Finish: ${el.description.split(' ')[el.description.split(' ').length - 1]}<br>
-  //   `;
-  //   sequenceList.appendChild(li);
-  // });
 });

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trampoline Trainer</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="nav-header">
+    <a href="../index.html" style="color: white; text-decoration: none;">🏠 Home</a>
+  </nav>
+
+  <header>
+    <h1>Tricking combos</h1>
+    <p>Generate a random sequence of tricking elements to train!</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="row difficulty-row">
+        <label>Choose difficulty:</label>
+        <div class="difficulty-buttons">
+          <button type="button" class="difficulty-btn" data-value="1">1</button>
+          <button type="button" class="difficulty-btn" data-value="2">2</button>
+          <button type="button" class="difficulty-btn" data-value="3">3</button>
+          <button type="button" class="difficulty-btn" data-value="4">4</button>
+          <button type="button" class="difficulty-btn" data-value="5">5</button>
+        </div>
+      </div>
+
+      <div class="row sequence-row">
+        <label for="sequenceLength">Number of elements:</label>
+        <input type="number" id="sequenceLength" min="1" max="10" value="5">
+        <button id="generateBtn">Generate Sequence</button>
+      </div>
+    </div>
+
+      <p style="color: red">Starting / landing positions and combos is still in progress</p>
+
+    <!-- Video & Info Modal -->
+    <div id="videoModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+
+        <div class="modal-body">
+          <div class="video-container">
+            <video id="modalVideo" controls disablePictureInPicture>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="trick-info-extended">
+            <h2 id="modalTrickName"></h2>
+            <h4 id="modalOtherName"></h4>
+            <p id="modalDescription"></p>
+            <p><strong>Tricker:</strong> <span id="modalTricker"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="sequenceContainer">
+      <h2>Your Training Sequence</h2>
+      <ul id="sequenceList"></ul>
+    </section>
+  </main>
+
+  <div class="help-container">
+    <button id="helpButton" class="btn-help">How to read moves? ℹ️</button>
+    <div id="helpContent" class="help-content hidden">
+      <h2>🤸 Understanding the Rotation</h2>
+      <p>More information in <a href="https://www.loopkickstricking.com/tricktionary/stances">Loopkicks Stances</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>These tricks and videos were sourced from <a href="https://www.loopkickstricking.com/tricktionary">Loopkicks</a></p>
+    <p class="instagram-link">
+      <a href="https://instagram.com/air_runner" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram logo" class="insta-logo">
+        @air_runner
+      </a>
+    </p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
